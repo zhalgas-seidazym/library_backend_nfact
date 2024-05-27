@@ -42,7 +42,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
@@ -135,7 +134,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = 'static/'
-
+STATIC_DIR = BASE_DIR / 'static'
+MEDIA_DIR = BASE_DIR / 'media'
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -149,7 +151,6 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 465
 
 APPEND_SLASH = True
-
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
