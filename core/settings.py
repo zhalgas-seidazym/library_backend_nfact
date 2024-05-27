@@ -155,7 +155,7 @@ APPEND_SLASH = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://library-client-nfact-a5cego592-zhalgas-projects-d220c277.vercel.app"
+    "https://library-client-nfact.vercel.app"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
