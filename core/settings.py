@@ -153,10 +153,13 @@ EMAIL_PORT = 465
 
 APPEND_SLASH = True
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://library-client-nfact.vercel.app",
-    "https://library-system-app.up.railway.app"
+CSRF_TRUSTED_ORIGINS = [
+    'https://library-system-app.up.railway.app',
+    'https://library-client-nfact.vercel.app'
+    'http://library-system-app.up.railway.app',
+    'http://library-client-nfact.vercel.app',
+    "http://*",
+    "https://*"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
