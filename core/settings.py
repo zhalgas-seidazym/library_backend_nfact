@@ -154,7 +154,8 @@ EMAIL_PORT = 465
 APPEND_SLASH = True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
+    "http://*",
+    "https://*"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
