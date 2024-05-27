@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "library-app"
+version = "0.1.0"
+description = ""
+authors = ["dinmukhammed <arystambekdimash005@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.3"
+djangorestframework = "^3.14.0"
+python-dotenv = "^1.0.1"
+djangorestframework-simplejwt = "^5.3.1"
+psycopg2-binary = "^2.9.9"
+celery = "^5.3.6"
+pillow = "^10.2.0"
+drf-yasg = "^1.21.7"
+channels = "^4.0.0"
+django-cors-headers = "^4.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
