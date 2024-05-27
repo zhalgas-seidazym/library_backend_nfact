@@ -155,10 +155,12 @@ APPEND_SLASH = True
 
 CSRF_TRUSTED_ORIGINS = [
     'https://library-system-app.up.railway.app',
-    'https://library-client-nfact.vercel.app',
-    'http://library-system-app.up.railway.app',
-    'http://library-client-nfact.vercel.app'
+    'https://library-client-nfact.vercel.app'
 ]
+CORS_ORIGIN_WHITELIST = (
+    'https://library-system-app.up.railway.app',
+    'https://library-client-nfact.vercel.app'
+)
 
 CORS_ALLOW_CREDENTIALS = True
 
